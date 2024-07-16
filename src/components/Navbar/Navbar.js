@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "../Link/Link";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [navClass, setNavClass] = useState("");
@@ -18,12 +19,17 @@ const Navbar = () => {
       setNavClass(navClass);
     });
   }, []);
+
   return (
     <nav className={`navbar navbar-expand-md bg-light ${navClass}`}>
       <div className="container">
         <a className="navbar-brand" href="/">
-          <span>Curtilage Shelter Limited</span>
-          <i className="fas fa-circle ml-1" />
+          <img
+            src="/curtilage1.jpg"
+            alt="Curtilage Shelter Limited Logo"
+            className="navbar-logo"
+          />
+          <span className="ml-2">Curtilage Shelter Limited</span>
         </a>
         <div
           className={`navbar-toggler nav-icon ${(() => {

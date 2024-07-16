@@ -19,11 +19,28 @@ const Projects = () => {
       price: "$2000",
       rating: 4.0,
     },
+    {
+      id: 3,
+      image:
+        "https://i.pinimg.com/originals/df/ca/f3/dfcaf3af1446d43717e5854de199bed3.jpg",
+      location: "Location 3",
+      price: "$2000",
+      rating: 4.0,
+    },
+    {
+      id: 4,
+      image:
+        "https://cdn.indesignlive.com/wp-content/uploads/Cortex-Shelter-by-Cutwork-6.jpg",
+      location: "Location 4",
+      price: "$2000",
+      rating: 4.0,
+    },
     // Add more projects as needed
   ];
 
   return (
     <section id="project">
+      <h2 className="text-center mt-3">Our Projects</h2>
       <div className="projects">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
